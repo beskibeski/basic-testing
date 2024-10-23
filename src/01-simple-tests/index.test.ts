@@ -3,7 +3,7 @@ import { simpleCalculator, Action } from './index';
 
 describe('simpleCalculator tests', () => {
   test('should add two numbers', () => {
-    const sum = simpleCalculator({ 
+    const sum = simpleCalculator({
       a: 10,
       b: 2,
       action: Action.Add,
@@ -33,7 +33,7 @@ describe('simpleCalculator tests', () => {
     const division = simpleCalculator({
       a: 30,
       b: 3,
-      action: Action.Divide
+      action: Action.Divide,
     });
     expect(division).toBe(10);
   });
